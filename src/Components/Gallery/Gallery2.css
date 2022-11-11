@@ -1,0 +1,125 @@
+.mg-div-g {
+  margin-top: 70px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.disp-diva {
+  display: flex;
+  justify-content: space-between;
+}
+.text-center {
+  margin-bottom: 70px;
+}
+.sp-by {
+  font-size: medium;
+}
+.bry-img {
+  animation-name: mymove;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 2s;
+}
+@keyframes mymove {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(20px);
+  }
+}
+.hr {
+  width: 180px;
+  height: 0.3vh;
+  color: black;
+  background-color: black;
+}
+.div-flex1-div {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+.by-disp {
+  display: flex;
+  gap: 5px;
+}
+.p-para {
+  font-family: cursive;
+  font-style: oblique;
+  font-size-adjust: calc(20px, 5px);
+  font-size: 30px;
+  font-feature-settings: "c2pc";
+
+  font-stretch: ultra-condensed;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.raf {
+  display: block;
+
+  text-align: center;
+  align-items: center;
+}
+.raf div {
+  margin-bottom: 8px;
+}
+@media (max-width: 700px) {
+  .text-center {
+    font-size: 20px;
+  }
+  .disp-diva {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .div-flex1-div {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-top: 30px;
+  }
+  .mg-div-g {
+    margin-top: 70px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .bry-img {
+    width: 100%;
+  }
+  .by-disp {
+    display: flex;
+    gap: 5px;
+    margin-left: 20px;
+  }
+  .raf {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 480px) {
+  .text-center {
+    font-size: medium;
+  }
+  .by-disp {
+    flex-direction: column;
+  }
+  .div-flex1-div {
+    margin-top: -0px;
+  }
+
+  .p-para {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    font-family: cursive;
+    font-style: oblique;
+    font-size-adjust: calc(20px, 5px);
+    font-size: 30px;
+    font-feature-settings: "c2pc";
+    margin-left: auto;
+    margin-right: 80px;
+    justify-content: center;
+    font-stretch: ultra-condensed;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+}

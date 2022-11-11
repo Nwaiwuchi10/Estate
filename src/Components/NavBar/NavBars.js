@@ -20,27 +20,10 @@ import InboxIcon from "@mui/icons-material/MoveToInbox";
 import MailIcon from "@mui/icons-material/Mail";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { HiBars3BottomRight } from "react-icons/hi2";
+import { GiOilySpiral } from "react-icons/gi";
+import "./Nav.css";
 
 const drawerWidth = 240;
-
-const Main = styled("main", { shouldForwardProp: (prop) => prop !== "open" })(
-  ({ theme, open }) => ({
-    flexGrow: 1,
-    padding: theme.spacing(3),
-    transition: theme.transitions.create("margin", {
-      easing: theme.transitions.easing.sharp,
-      duration: theme.transitions.duration.leavingScreen,
-    }),
-    marginRight: -drawerWidth,
-    ...(open && {
-      transition: theme.transitions.create("margin", {
-        easing: theme.transitions.easing.easeOut,
-        duration: theme.transitions.duration.enteringScreen,
-      }),
-      marginRight: 0,
-    }),
-  })
-);
 
 const AppBar = styled(MuiAppBar, {
   shouldForwardProp: (prop) => prop !== "open",
@@ -51,8 +34,6 @@ const AppBar = styled(MuiAppBar, {
   }),
   ...(open && {
     width: `calc(100% - ${drawerWidth}px)`,
-    display: "flex",
-    justifyContent: "right",
 
     transition: theme.transitions.create(["margin", "width"], {
       easing: theme.transitions.easing.easeOut,
@@ -90,45 +71,78 @@ export default function PersistentDrawerRight() {
       <AppBar
         position="fixed"
         open={open}
+        className="app-bar-div"
+        // style={{
+        //   display: "flex",
+        //   justifyContent: "space-around",
+
+        //   overflow: "0.1",
+        // }}
         sx={{
-          bgcolor: "#900C3F",
-          overlay: "0.4",
+          bgcolor: "transparent",
+          // bgcolor: "#900C3F",
+          overflow: "0.1",
         }}
       >
-        <Toolbar>
-          <Typography
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+
+            justifyContent: "space-between",
+            alignItem: "center",
+            textAlign: "center",
+          }}
+        >
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              textAlign: "center",
+            }}
+          >
+            THE BRYANSTON
+          </div>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              textAlign: "center",
+              fontSize: "30px",
+            }}
+          >
+            <GiOilySpiral />
+          </div>
+          {/* <Typography
             variant="h6"
             noWrap
             sx={{ flexGrow: 1 }}
             component="div"
-          ></Typography>
+          ></Typography> */}
 
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            edge="end"
+          <div
+            style={{ cursor: "pointer" }}
+            // aria-label="open drawer"
+            // edge="end"
             onClick={handleDrawerOpen}
-            sx={{ ...(open && { display: "none" }) }}
+            // sx={{ ...(open && { display: "none" }) }}
           >
             <HiBars3BottomRight
               style={{
-                display: "flex",
-                justifyContent: "right",
-                float: "right",
-                alignItems: "center",
-                marginLeft: "60px",
                 fontSize: "40px",
-                textAlign: "center",
+                color: "white",
               }}
             />
-          </IconButton>
-        </Toolbar>
+          </div>
+        </div>
       </AppBar>
-      <Main open={open}>
+      {/* <Main open={open}>
         <DrawerHeader />
         <Typography paragraph></Typography>
         <Typography paragraph></Typography>
-      </Main>
+      </Main> */}
       <Drawer
         sx={{
           width: "100%",
@@ -137,7 +151,8 @@ export default function PersistentDrawerRight() {
           // flexShrink: 0,
           "& .MuiDrawer-paper": {
             width: "100%",
-            background: " #900C3F",
+            bgcolor: "#900C3F",
+            // background: " #900C3F",
             // width: drawerWidth,
           },
         }}
@@ -148,14 +163,35 @@ export default function PersistentDrawerRight() {
         <DrawerHeader>
           <IconButton onClick={handleDrawerClose}>
             {theme.direction === "rtl" ? (
-              <FaTimes style={{ fontSize: "50px" }} />
+              <FaTimes style={{ fontSize: "50px", color: "whitesmoke" }} />
             ) : (
-              <FaTimes style={{ fontSize: "50px" }} />
+              <FaTimes style={{ fontSize: "50px", color: "whitesmoke" }} />
             )}
           </IconButton>
         </DrawerHeader>
         {/* <Divider /> */}
-        <List></List>
+        <div className="lister">
+          <hr />
+          <div>THE BRYANSTON</div>
+          <hr />
+          <div>AMENITIES</div>
+          <hr />
+          <div>NEIGHBOUR</div>
+          <hr />
+          <div>THE TEAM</div>
+          <hr />
+          <div>MY RESIDENCE</div>
+          <hr />
+        </div>
+
+        <div className="next-div">sales@thebryanston.co.uk</div>
+        <div className="next-div">+44(0)20 7535 3949</div>
+
+        <div className="next-display-div">
+          <div>Cookie Policy</div>
+          <div>Disclaimer</div>
+          <div>Privacy Policy</div>
+        </div>
         {/* <Divider /> */}
         <List></List>
       </Drawer>

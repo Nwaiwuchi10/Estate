@@ -1,0 +1,35 @@
+.gel-div {
+  margin-top: 70px;
+  width: 100%;
+  /* margin-left: 20px;
+  margin-right: 20px; */
+}
+.div-img-div {
+  width: 97%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.imge-gel {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  animation-name: nchrys;
+  /* animation-iteration-count: unset; */
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 2s;
+}
+@keyframes nchrys {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .text-center {
+    font-size: medium;
+  }
+}
