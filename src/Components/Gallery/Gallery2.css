@@ -15,9 +15,10 @@
 }
 .bry-img {
   animation-name: mymove;
-  animation-iteration-count: infinite;
+  animation-iteration-count: unset;
+  /* animation-iteration-count: infinite; */
   animation-direction: alternate;
-  animation-duration: 2s;
+  animation-duration: 10s;
 }
 @keyframes mymove {
   from {
