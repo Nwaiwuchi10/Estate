@@ -1,0 +1,131 @@
+.fifth-main {
+  background-color: #f8f9fa;
+  width: 100%;
+  height: auto;
+}
+.class-display {
+  display: flex;
+  margin-bottom: 100px;
+  /* justify-content: space-around; */
+}
+.cl-mg {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.div-img-fith {
+  width: 70%;
+}
+.imge-fifth {
+  width: 100%;
+  animation-name: nchrys;
+  animation-iteration-count: unset;
+  /* animation-iteration-count: infinite; */
+  animation-direction: alternate;
+  animation-duration: 10s;
+}
+@keyframes nchrys {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(20px);
+  }
+}
+.h-divs {
+  font-family: poppins;
+  margin-right: 0px;
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+  justify-content: flex-start;
+  text-align: center;
+  align-items: flex-start;
+  font-size: larger;
+}
+.floj-div {
+  display: flex;
+  align-items: flex-end;
+  justify-content: right;
+  /* width: 60%; */
+}
+.desp-div {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+}
+.bn-img {
+  width: 70%;
+}
+.floker-div {
+}
+.bner-img {
+  width: 90%;
+}
+.floker2-div {
+  margin-top: 200px;
+}
+.fifth-classd {
+  margin-top: 70px;
+  display: flex;
+  /* justify-content: space-around; */
+}
+.div-fifth-img-fith {
+  width: 55%;
+}
+.fifth-imge-fifth {
+  width: 100%;
+}
+.h-fifth-divs {
+  font-family: poppins;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  font-size: larger;
+}
+@media (max-width: 700px) {
+  .class-display {
+    flex-direction: column;
+  }
+  .div-img-fith {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .floj-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 60%; */
+  }
+  .desp-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 100px;
+  }
+  .bn-img {
+    width: 100%;
+  }
+  .bner-img {
+    width: 100%;
+  }
+  .bner-img2 {
+    width: 100%;
+  }
+  .floker2-div {
+    margin-top: 70px;
+  }
+  .fifth-classd {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* justify-content: space-around; */
+  }
+  .div-fifth-img-fith {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}

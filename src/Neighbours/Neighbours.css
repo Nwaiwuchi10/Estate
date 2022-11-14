@@ -1,0 +1,189 @@
+.main-neigh-div {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  color: white;
+  /* margin-top: auto;
+    margin-bottom: auto; */
+  align-items: center;
+}
+.neigh-h3 {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 40px;
+  width: 50%;
+}
+.next-main-div {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 50px;
+}
+.most-h {
+  font-family: poppins;
+  font-style: oblique;
+}
+.n-flower-display {
+  display: flex;
+  gap: 70px;
+  justify-content: center;
+  margin-top: 100px;
+}
+.p-flow {
+  margin-top: auto;
+  margin-bottom: auto;
+  align-items: center;
+}
+.neighbour-fouth-slide {
+  display: flex;
+  gap: 50px;
+  margin-top: 120px;
+}
+.fout-img-div {
+  width: 60%;
+}
+.fout-img-div .byc-img {
+  width: 800px;
+  height: auto;
+}
+.byc-writeup {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.byc-writeup-div {
+  color: gray;
+  font-size: 25px;
+  font-weight: 700;
+}
+.byc-h6 {
+  text-align: left;
+  font-size: 20px;
+  font-family: poppins;
+  color: inherit;
+  margin-top: 30px;
+}
+.next-video-div {
+  margin-top: 80px;
+}
+.m-vid {
+  width: 80%;
+  height: auto;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+.mayfair-display-div {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 50px;
+  margin-top: 100px;
+}
+.jde {
+  width: 50%;
+}
+.myf-div {
+  width: 25%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.myf-div div {
+  font-size: 25px;
+  font-weight: 700;
+}
+.myf-h6 {
+  font-size: 20px;
+  font-family: "poppins";
+  margin-top: 20px;
+}
+.st-div {
+  height: 20vh;
+  background: linear-gradient(green, grey);
+  margin-top: 70px;
+  position: static;
+}
+@media only screen and (max-width: 1024px) {
+  .neigh-h3 {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 30px;
+    width: 100%;
+  }
+  .n-flower-display {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    justify-content: center;
+    margin-top: 100px;
+  }
+}
+@media only screen and (max-width: 980px) {
+  .n-flower-display {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    justify-content: center;
+    margin-top: 100px;
+  }
+  .neighbour-fouth-slide {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .fout-img-div {
+    width: 100%;
+  }
+  .fout-img-div .byc-img {
+    width: 100%;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .n-flower-display {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    justify-content: center;
+    margin-top: 100px;
+  }
+  .neighbour-fouth-slide {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 50px;
+  }
+  .fout-img-div {
+    width: 100%;
+  }
+  .fout-img-div .byc-img {
+    width: 100%;
+    height: auto;
+  }
+  .mayfair-display-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 50px;
+    margin-top: 100px;
+  }
+  .jde {
+    width: 100%;
+  }
+  .myf-div {
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .jde-img {
+    width: 100%;
+  }
+  @media only screen and (max-width: 480px) {
+    .fl-img-g {
+      width: 100%;
+    }
+  }
+}

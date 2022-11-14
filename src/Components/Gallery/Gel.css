@@ -1,11 +1,13 @@
 .gel-div {
   margin-top: 70px;
   width: 100%;
+  margin-bottom: 100px;
   /* margin-left: 20px;
   margin-right: 20px; */
 }
 .div-img-div {
   width: 97%;
+  height: 50vh;
   margin-left: auto;
   margin-right: auto;
 }
@@ -27,9 +29,28 @@
     transform: translateX(20px);
   }
 }
+@media (max-width: 700px) {
+  .text-center {
+    font-size: medium;
+  }
+  .gel-div {
+    margin-top: 70px;
+    width: 100%;
+    margin-bottom: -90px;
+    /* margin-left: 20px;
+    margin-right: 20px; */
+  }
+}
 
 @media (max-width: 480px) {
   .text-center {
     font-size: medium;
+  }
+  .gel-div {
+    margin-top: 70px;
+    width: 100%;
+
+    /* margin-left: 20px;
+    margin-right: 20px; */
   }
 }

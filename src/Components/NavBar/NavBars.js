@@ -22,6 +22,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import { HiBars3BottomRight } from "react-icons/hi2";
 import { GiOilySpiral } from "react-icons/gi";
 import "./Nav.css";
+import { Link } from "react-router-dom";
 
 const drawerWidth = 240;
 
@@ -172,11 +173,23 @@ export default function PersistentDrawerRight() {
         {/* <Divider /> */}
         <div className="lister">
           <hr />
-          <div>THE BRYANSTON</div>
+          <div>
+            <Link to="/" style={{ textDecoration: "none", color: "white" }}>
+              THE BRYANSTON
+            </Link>{" "}
+          </div>
           <hr />
           <div>AMENITIES</div>
           <hr />
-          <div>NEIGHBOUR</div>
+          <div>
+            {" "}
+            <Link
+              to="/neighbour"
+              style={{ textDecoration: "none", color: "white" }}
+            >
+              NEIGHBOUR
+            </Link>
+          </div>
           <hr />
           <div>THE TEAM</div>
           <hr />
